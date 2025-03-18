@@ -10,8 +10,10 @@
  * libuv v1.48.0
  * luafilesystem v1_8_0
  * mimalloc v2.1.7
- * 
 
+  For reason to add libraries for easy and common libraries with reason to use them. For research and recommend from Grok 3 date 2025.
+
+  As note if those lasted update is reason is simple. It use c build to keep it simple.
 
 # Lua 5.4.7 Embedded Project
 
