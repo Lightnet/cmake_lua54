@@ -1,6 +1,17 @@
 # Information:
   Ref build for how to build.
 
+  Add some libraries for better handle lua script and other basic features.
+
+# Features:
+ * lua v5.4.7
+ * cjson v1.7.18
+ * luasocket v3.1.0
+ * libuv v1.48.0
+ * luafilesystem v1_8_0
+ * mimalloc v2.1.7
+ * 
+
 
 # Lua 5.4.7 Embedded Project
 

@@ -6,7 +6,7 @@ if not exist build mkdir build
 cd build
 cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Debug ..
 cmake --build . --config Debug
-echo Running lua_app with main.lua...
-cd Debug
-lua_app.exe ..\..\main.lua
+@REM echo Running lua_app with main.lua...
+@REM cd Debug
+@REM lua_app.exe ..\..\main.lua
 @REM pause
