@@ -53,11 +53,19 @@ Create a project folder (e.g., D:\devcprojects\lua54\) with these files:
 
 ```text
 lua54/
-├── CMakeLists.txt    # CMake configuration to fetch and build Lua
-├── main.c           # C code to embed Lua and run main.lua
-├── main.lua         # Lua script to execute
-├── run.bat          # Batch script to build and run
-└── README.md        # This file
+├── include/                # Header files
+│   ├── point.h
+│   ├── lua_cjson.h
+│   └── lua_libuv.h
+├── src/                    # C source files
+│   ├── main.c              # C code to embed Lua and run main.lua
+│   ├── point.c
+│   ├── lua_cjson.c
+│   └── lua_libuv.c
+├── main.lua                # Lua script to execute
+├── CMakeLists.txt          # CMake configuration to fetch and build Lua
+├── run.bat                 # Batch script to build and run
+└── README.md               # Project overview
 ```
 
 Files Needed
