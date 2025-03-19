@@ -6,6 +6,7 @@
 #include "lualib.h"
 #include "uv.h"
 #include "mimalloc.h"
+#include "point.h"
 
 // Module declarations
 extern int luaopen_socket_core(lua_State *L);
@@ -40,6 +41,10 @@ int main(int argc, char *argv[]) {
     }
 
     luaL_openlibs(L);
+
+    // Register the point library
+    luaL_requiref(L, "point", luaopen_point, 1);
+    lua_pop(L, 1); // Remove the library table from the stack
 
     // Register LuaSocket
     lua_getglobal(L, "package");
